@@ -2,8 +2,8 @@
 	import Step from "./Step.svelte";
     
     let steps = [
-        { name: 'Bloom Dunedin', icon: 'fa-solid fa-cart-shopping', description: 'This is the webite i created for Bloom Dunedin, a new art and music space in Ōtepoti. Bloom Dunedin is also a venue that is available for hire. This website along with its domain is hosted on hostinger together', href: 'https://bloomdunedin.com' },
-        { name: 'Zehavit Ceramics', icon: 'fa-solid fa-cart-shopping', description: 'This is the website I created for Zehavit Ceramics a pottery workshop in Macandrew Bay, Dunedin that sells ceramics and pottery lessons. This website is hosted securely on hostinger and connected to an external domain the client keeps', href: 'https://zehavitceramics.com' }
+        { name: 'Bloom Dunedin', icon: 'fa-solid fas fa-desktop', description: 'This is the webite i created for Bloom Dunedin, a new art and music space in Ōtepoti. Bloom Dunedin is also a venue that is available for hire. This website along with its domain is hosted on hostinger together', href: 'https://bloomdunedin.com' },
+        { name: 'Zehavit Ceramics', icon: 'fa-solid fas fa-desktop', description: 'This is the website I created for Zehavit Ceramics a pottery workshop in Macandrew Bay, Dunedin that sells ceramics and pottery lessons. This website is hosted securely on hostinger and connected to an external domain the client keeps', href: 'https://zehavitceramics.com' }
     ]
 
     let benefits = [
@@ -21,14 +21,14 @@
         <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
 
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-             Hi im <span class="poppins text-violet-400">Ben</span> Darlington<br/> Full Stack
+             Hi, I'm <span class="poppins text-violet-400">Ben</span> Darlington<br/> Full Stack
              <span class="poppins text-violet-400">Developer</span>
              </h2>
             <p class="text-base sm:text-lg md:text-xl">
-                My <span class="poppins text-violet-400">favourite tech</span> includes Python
+                My <span class="poppins text-violet-400">favourite tech</span> includes Python, JavaScript, SvelteKit, Tailwind CSS, and PostgreSQL. I enjoy building <span class="poppins text-violet-400">websites</span> and <span class="poppins text-violet-400">applications</span> that are both functional and visually appealing.  
             </p>
             <a class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins
-             relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer" href="#contact">
+             relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer" href="#contacts">
                 <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"></div>
 
                 <h4 class="relative z-10">Get in touch &rarr;</h4>
@@ -79,19 +79,9 @@
     </div>
     <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am ... </p>
     <div class="flex flex-col gap-20 w-full mx-auto max-w-200">
-        {#each benefits as benefit, index (benefit.name)}
-        <div class="flex gap-6 sm:gap-8">
-            <p class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
-                0{index+1}
-            </p>
-            <div class="flex flex-col gap-6 sm:gap-8">
-                <h3 class="text-2xl sm:text-3xl md:text-5xl">
-                    {benefit.name}
-                </h3>
-                <p>{benefit.description}</p>
-            </div>
-        </div>
-        {/each}
+        <p class="text-base sm:text-lg md:text-xl">
+               I am a junior software developer based in Dunedin, New Zealand. I recieved my bachelor's degree in Computer Science from the University of Otago in 2025. I currently work at a Dunedin based agritech startup developing internal tools and applications to speed up and improve the efficiency of operations. Always looking for my next project.
+        </p> 
     </div>
     </section>
     
