@@ -2,8 +2,8 @@
 	import Step from "./Step.svelte";
     
     let steps = [
-        { name: 'Bloom Dunedin', icon: 'fa-solid fa-cart-shopping', href: 'https://your-bloom-dunedin-url.com' },
-        { name: 'Zehavit Ceramics', icon: 'fa-solid fa-cart-shopping', href: 'https://your-zehavit-url.com' }
+        { name: 'Bloom Dunedin', icon: 'fa-solid fa-cart-shopping', description: 'This is the webite i created for Bloom Dunedin, a new art and music space in Ōtepoti. Bloom Dunedin is also a venue that is available for hire. This website along with its domain is hosted on hostinger together', href: 'https://bloomdunedin.com' },
+        { name: 'Zehavit Ceramics', icon: 'fa-solid fa-cart-shopping', description: 'This is the website I created for Zehavit Ceramics a pottery workshop in Macandrew Bay, Dunedin that sells ceramics and pottery lessons. This website is hosted securely on hostinger and connected to an external domain the client keeps', href: 'https://zehavitceramics.com' }
     ]
 
     let benefits = [
@@ -54,14 +54,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
             <Step step={steps[0]}>
 
-                <p>Bloom dunedin is a venue is Kaikorai valley</p>
-                <strong class="text-violet-400">Created with a website builder on hostinger and connected directly to a hostinger purchased .com domain</strong>
+                <strong class="text-violet-400"></strong>
             </Step>
 
             <Step step={steps[1]}>
 
-                <p>Zehavit ceramics is a pottery studio in Macandrew Bay</p>
-                <strong class="text-violet-400">Created with a website builder on hostinger and connected to a seperate domain so the client could have full ownership</strong>
+                <strong class="text-violet-400"></strong>
             </Step>
         
         </div>

@@ -15,6 +15,7 @@
     <h3 class="font-medium text-xl sm:text-2xl md:text-3xl">
         {step.name}
     </h3>
+    <p>{step.description}</p>
     {@render children()}
     <div class="flex-1 flex justify-between gap-4 items-end">
         <div
