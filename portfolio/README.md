@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add prettier eslint --install npm portfolio
+npx sv@0.16.1 create --template minimal --no-types --add prettier eslint tailwindcss="plugins:none" --install npm portfolio
 ```
 
 ## Developing
